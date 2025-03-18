@@ -7,7 +7,7 @@ char codigo[20];
 char cidade[50];
 int populacao, turismo;
 float area, pib;
-float densidadepopulacional, PIBpercapita;
+float densidadepopulacional, PIBpercapita, superpoder;
 
 char estado2[10];
 char codigo2[20];
@@ -15,7 +15,7 @@ char cidade2[50];
 int populacao2, turismo2;
 float area2, pib2;
 float populacao2area2;
-float densidadepopulacional2, PIBpercapita2;
+float densidadepopulacional2, PIBpercapita2, superpoder2;
 
 
 printf ("................\n");
@@ -98,6 +98,22 @@ printf ("Populacao: %d \n", populacao2);
 printf ("Area(km²): %f \n", area2);
 printf ("PIB: %f \n", pib2);
 printf ("Pontos turisticos: %d \n", turismo2);
+
+// Comparação das cartas
+printf("\nComparação de Cartas:\n");
+printf("População: %d\n", populacao > populacao2 );
+printf("Área: %d\n", area > area2);
+printf("PIB: %d\n", pib > pib2);
+printf("Pontos Turísticos: %d\n", turismo > turismo2 );
+printf("Densidade Populacional: %d\n", densidadepopulacional < densidadepopulacional2);
+printf("PIB per Capita: %d\n", PIBpercapita > PIBpercapita2);
+printf("Super Poder: %d\n", superpoder > superpoder2);
+
+// Escolha do atributo para comparação (ex: População)
+printf("\nComparação de cartas (Atributo: População):\n");
+printf("Carta 1 - %s (%s): %d\n", cidade, estado, populacao);
+printf("Carta 2 - %s (%s): %d\n", cidade2, estado2, populacao2);
+
 
 printf ("Bom jogo e boa sorte");
 
