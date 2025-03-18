@@ -7,12 +7,15 @@ char codigo[20];
 char cidade[50];
 int populacao, turismo;
 float area, pib;
+float densidadepopulacional, PIBpercapita;
 
 char estado2[10];
 char codigo2[20];
 char cidade2[50];
 int populacao2, turismo2;
 float area2, pib2;
+float populacao2area2;
+float densidadepopulacional2, PIBpercapita2;
 
 
 printf ("................\n");
@@ -42,6 +45,12 @@ scanf ("%f", &pib);
 printf ("Pontos turisticos: \n");
 scanf ("%d", &turismo);
 
+printf ("Densidade populacional: \n");
+scanf ("%f", &densidadepopulacional);
+
+printf ("PIB per capita: \n");
+scanf ("%f", &PIBpercapita);
+
 printf ("Cadastre a segunda carta. \n\n");
 printf ("Segunda carta \n\n");
 printf ("Estado: \n");
@@ -63,6 +72,12 @@ scanf ("%f", &pib2);
 
 printf ("Pontos turisticos: \n");
 scanf ("%d", &turismo2);
+
+printf ("Densidade populacional: \n");
+scanf ("%f", &densidadepopulacional2);
+
+printf ("PIB per capita: \n");
+scanf ("%f", &PIBpercapita2);
 
 printf("\n\nCartas cadastradas com sucesso!\n\n");
 
